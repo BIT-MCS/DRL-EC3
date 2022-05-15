@@ -1,0 +1,11 @@
+gym
+matplotlib
+numpy
+scipy
+seaborn
+tqdm
+colorcet
+panel
+pyviz-comms
+pandas
+tensorboard
