@@ -51,7 +51,7 @@ Corresponding author: Chi Harold Liu.
 
 ## :e-mail: Contact
 
-If you have any question, please email `3120215520@bit.edu.cn`.
+If you have any question, please email `daizipeng@bit.edu.cn`.
 
 ## Paper
 If you are interested in our work, please cite our paper as
