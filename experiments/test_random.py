@@ -4,13 +4,13 @@ import os
 import tensorflow as tf
 import pandas as pd
 
-import maddpg.common.tf_util as U
-from experiments.env0 import log0 as Log
-from experiments.env0.data_collection0 import Env
-from maddpg.trainer.maddpg import MADDPGAgentTrainer
+import maddpg1.common.tf_util as U
+from env0 import log0 as Log
+from env0.data_collection0 import Env
+from maddpg1.trainer.maddpg import MADDPGAgentTrainer
 
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # Hyperparameters
 ARGUMENTS = [
@@ -19,8 +19,8 @@ ARGUMENTS = [
     ["--max-episode-len", int, 500, "maximum episode length"],
     ["--num-episodes", int, 5000, "number of episodes"],
     ["--num-adversaries", int, 0, "number of adversaries(enemy)"],
-    ["--good-policy", str, "maddpg", "policy for good agents"],
-    ["--adv-policy", str, "maddpg", "policy of adversaries"],
+    ["--good-policy", str, "maddpg1", "policy for good agents"],
+    ["--adv-policy", str, "maddpg1", "policy of adversaries"],
 
     # Core training parameters
     ["--lr", float, 5e-4, "learning rate for Adam optimizer"],
@@ -41,7 +41,7 @@ ARGUMENTS = [
     # TODO: Experiments
     # Ape-X
     ["--num_actor_workers", int,0,
-     "number of environments one agent can deal with. if >1, use apex ; else, use simple maddpg"],
+     "number of environments one agent can deal with. if >1, use apex ; else, use simple maddpg1"],
     ["--debug_dir", str, "/debug_list/",
      "save index,reward(n-step),priority, value,wi per every sample from experience"],
 
@@ -55,7 +55,7 @@ ARGUMENTS = [
     ["--save-dir", str, "/policy/", "directory in which training state and model sho uld be saved"],
     ["--save-rate", int, 10, "save model once every time this many episodes are completed"],
     ["--model_to_keep", int, 100, "the number of saved models"],
-    ["--load-dir", str, "/media/sda1/MCS_experiments/test_裸奔/uav5",
+    ["--load-dir", str, r"E:\DRL-EC3-main\experiments\2024\03-06\19-14-48\policy",
      "directory in which training state and model are loaded"],
 
     # Test
@@ -68,7 +68,7 @@ ARGUMENTS = [
 ACTIONS = [
     ["--restore", "store_true", False],
     ["--display", "store_true", False],
-    ["--benchmark", "store_true", False]
+    ["--benchmark", "store_true", True]
 
 ]
 
@@ -185,7 +185,7 @@ def test(arglist, log,full_load_dir,test_iteration):
                 fairness.append(env.collection_fairness)
                 normal_fairness.append(env.normal_collection_fairness)
                 collection_ratio.append(1.0-env.leftrewards)
-                energy_consumption.append(np.sum(env.normal_use_energy))
+                energy_consumption.append(np.sum(env.normal_energy()))
                 collision.append(np.sum(env.walls))
                 steps.append(env.count)
 
@@ -266,7 +266,7 @@ if __name__ == '__main__':
                              "consumption of energy","ce_min","ce_max",
                              "efficiency","e_min","e_max"])
     for i in range(arglist.start,arglist.end):
-        full_load_dir=arglist.load_dir+"/policy/"+str(i)+".ckpt"
+        full_load_dir=arglist.load_dir+r"\policy\"+str(i)+".ckpt"
         log = Log.Log()
         indicator_to_pandas=test(arglist, log,full_load_dir,i)
         df.loc[i-70]=indicator_to_pandas

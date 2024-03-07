@@ -4,10 +4,10 @@ import os
 import tensorflow as tf
 import pandas as pd
 
-import maddpg.common.tf_util as U
-from experiments.env0 import log0 as Log
-from experiments.env0.data_collection0 import Env
-from maddpg.trainer.maddpg import MADDPGAgentTrainer
+import maddpg1.common.tf_util as U
+from env0 import log0 as Log
+from crazy_env.data_collection4 import Env
+from maddpg1.trainer.maddpg import MADDPGAgentTrainer
 
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -52,10 +52,10 @@ ARGUMENTS = [
 
     # Checkpointing 保存model
     ["--exp-name", str, None, "name of the experiment"],
-    ["--save-dir", str, "/policy/", "directory in which training state and model sho uld be saved"],
+    ["--save-dir", str, r"\policy", "directory in which training state and model sho uld be saved"],
     ["--save-rate", int, 10, "save model once every time this many episodes are completed"],
     ["--model_to_keep", int, 100, "the number of saved models"],
-    ["--load-dir", str, "/home/dzp1997/learning/my_experiment_model/alpha0.5_actor5_rnn3",  # TODO：polcy之前一个路径
+    ["--load-dir", str, r"E:\DRL-EC3-main\experiments\2024\03-06\19-14-48",  # TODO：polcy之前一个路径
      "directory in which training state and model are loaded"],
 
     # Test
@@ -68,7 +68,7 @@ ARGUMENTS = [
 ACTIONS = [
     ["--restore", "store_true", False],
     ["--display", "store_true", False],
-    ["--benchmark", "store_true", False]
+    ["--benchmark", "store_true", True]
 
 ]
 
@@ -185,8 +185,8 @@ def test(arglist, log,full_load_dir,test_iteration):
                 action_n = [agent.action(obs[None]) for agent, obs in zip(trainers, obs_n)]
 
             new_obs_n, rew_n, done_n, info_n, indicator = env.step(actions=action_n, indicator=indicator)
-            log.step_information(action_n, env, episode_step, iteration, meaningful_fill, meaningful_get,
-                                 indicator)
+          #log.step_information(action_n, env, episode_step, iteration, meaningful_fill, meaningful_get,
+                                # indicator)
 
             indicator = [0] * env.n
             episode_step += 1  # step per episode
@@ -210,7 +210,7 @@ def test(arglist, log,full_load_dir,test_iteration):
                 charge_frequency.append(np.sum(meaningful_fill))
                 station_remain.append(250-sum(env.fills_energy_remain))  # @TODO:这里写的比较傻逼
 
-                log.draw_path(env, iteration, meaningful_fill, meaningful_get)
+                log.draw_path(env, iteration)
 
                 iteration += 1
                 meaningful_fill = [0] * env.n

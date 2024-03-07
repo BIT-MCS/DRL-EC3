@@ -1,5 +1,5 @@
-from experiments.crazy_env.env_setting3 import Setting
-from experiments.image.mapM import MapM
+from .env_setting3 import Setting
+from image.mapM import MapM
 import os
 import copy
 from os.path import join as pjoin
@@ -860,6 +860,10 @@ class Env(object):
         #         tmp[i] = 1.0
 
         return tmp
+
+    @property
+    def normal_energy(self):
+        return list(np.array(self.energy) / self.maxenergy)
 
     @property
     def fairness(self):

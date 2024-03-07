@@ -1,11 +1,11 @@
 import os
 import numpy as np
 import tensorflow as tf
-import maddpg.common.tf_util as U
+import maddpg1.common.tf_util as U
 
-from maddpg.common.distributions import make_pdtype
+from maddpg1.common.distributions import make_pdtype
 from maddpg import AgentTrainer
-from maddpg.trainer.prioritized_rb.replay_buffer import ReplayBuffer
+from maddpg1.trainer.prioritized_rb.replay_buffer import ReplayBuffer
 import tensorflow.contrib.layers as layers
 
 

@@ -1,5 +1,5 @@
-from experiments.env0.env_setting0 import Setting
-from experiments.image.mapM import MapM
+from env0.env_setting0 import Setting
+from image.mapM import MapM
 import os
 import copy
 from os.path import join as pjoin
@@ -36,8 +36,10 @@ class Env(object):
         self.minaction = 0
         #
 
-        self.log_dir = log.full_path
-        # self.log_dir = mypjoin('.', self.sg.time)
+
+        # self.log_dir = log.full_path
+        print(log.full_path)
+        self.log_dir = mypjoin('.', self.sg.time)
         # basis
         self.mapx = self.sg.V['MAP_X']
         self.mapy = self.sg.V['MAP_Y']

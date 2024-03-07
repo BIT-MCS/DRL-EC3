@@ -1,0 +1,250 @@
+<tf.Variable 'Variable:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/fully_connected/weights:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/fully_connected_2/weights:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_0/q_func/fully_connected_2/biases:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_0/beta1_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_0/beta2_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d/kernel/Adam:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d/kernel/Adam_1:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d/bias/Adam:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d/bias/Adam_1:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_1/kernel/Adam:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_1/kernel/Adam_1:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_1/bias/Adam:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_1/bias/Adam_1:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_2/kernel/Adam:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_2/kernel/Adam_1:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_2/bias/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/conv2d_2/bias/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/batch_normalization/gamma/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/batch_normalization/gamma/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/batch_normalization/beta/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/batch_normalization/beta/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected/weights/Adam:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected/weights/Adam_1:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_1/weights/Adam:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_1/weights/Adam_1:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_1/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_1/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_2/weights/Adam:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_2/weights/Adam_1:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_2/biases/Adam:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/q_func/fully_connected_2/biases/Adam_1:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/fully_connected/weights:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/fully_connected_2/weights:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_0/target_q_func/fully_connected_2/biases:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/fully_connected/weights:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/fully_connected_2/weights:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_0/p_func/fully_connected_2/biases:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'agent_0_1/beta1_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_0_1/beta2_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d/kernel/Adam:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d/kernel/Adam_1:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d/bias/Adam:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d/bias/Adam_1:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_1/kernel/Adam:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_1/kernel/Adam_1:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_1/bias/Adam:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_1/bias/Adam_1:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_2/kernel/Adam:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_2/kernel/Adam_1:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_2/bias/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/conv2d_2/bias/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/batch_normalization/gamma/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/batch_normalization/gamma/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/batch_normalization/beta/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/batch_normalization/beta/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected/weights/Adam:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected/weights/Adam_1:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_1/weights/Adam:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_1/weights/Adam_1:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_1/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_1/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_2/weights/Adam:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_2/weights/Adam_1:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_2/biases/Adam:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'agent_0/agent_0/p_func/fully_connected_2/biases/Adam_1:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/fully_connected/weights:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/fully_connected_2/weights:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_0/target_p_func/fully_connected_2/biases:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'Variable_1:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/fully_connected/weights:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/fully_connected_2/weights:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_1/q_func/fully_connected_2/biases:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_1/beta1_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_1/beta2_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d/kernel/Adam:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d/kernel/Adam_1:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d/bias/Adam:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d/bias/Adam_1:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_1/kernel/Adam:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_1/kernel/Adam_1:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_1/bias/Adam:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_1/bias/Adam_1:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_2/kernel/Adam:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_2/kernel/Adam_1:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_2/bias/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/conv2d_2/bias/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/batch_normalization/gamma/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/batch_normalization/gamma/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/batch_normalization/beta/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/batch_normalization/beta/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected/weights/Adam:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected/weights/Adam_1:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_1/weights/Adam:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_1/weights/Adam_1:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_1/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_1/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_2/weights/Adam:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_2/weights/Adam_1:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_2/biases/Adam:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/q_func/fully_connected_2/biases/Adam_1:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/fully_connected/weights:0' shape=(10372, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/fully_connected_2/weights:0' shape=(600, 1) dtype=float32_ref>
+<tf.Variable 'agent_1/target_q_func/fully_connected_2/biases:0' shape=(1,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/fully_connected/weights:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/fully_connected_2/weights:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_1/p_func/fully_connected_2/biases:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'agent_1_1/beta1_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_1_1/beta2_power:0' shape=() dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d/kernel/Adam:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d/kernel/Adam_1:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d/bias/Adam:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d/bias/Adam_1:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_1/kernel/Adam:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_1/kernel/Adam_1:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_1/bias/Adam:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_1/bias/Adam_1:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_2/kernel/Adam:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_2/kernel/Adam_1:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_2/bias/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/conv2d_2/bias/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/batch_normalization/gamma/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/batch_normalization/gamma/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/batch_normalization/beta/Adam:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/batch_normalization/beta/Adam_1:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected/weights/Adam:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected/weights/Adam_1:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_1/weights/Adam:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_1/weights/Adam_1:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_1/biases/Adam:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_1/biases/Adam_1:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_2/weights/Adam:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_2/weights/Adam_1:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_2/biases/Adam:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'agent_1/agent_1/p_func/fully_connected_2/biases/Adam_1:0' shape=(4,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/conv2d/kernel:0' shape=(3, 3, 3, 16) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/conv2d/bias:0' shape=(16,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/conv2d_1/kernel:0' shape=(3, 3, 16, 32) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/conv2d_1/bias:0' shape=(32,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/conv2d_2/bias:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/batch_normalization/gamma:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/batch_normalization/beta:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/batch_normalization/moving_mean:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/batch_normalization/moving_variance:0' shape=(64,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/fully_connected/weights:0' shape=(5184, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/fully_connected/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/fully_connected_1/weights:0' shape=(600, 600) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/fully_connected_1/biases:0' shape=(600,) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/fully_connected_2/weights:0' shape=(600, 4) dtype=float32_ref>
+<tf.Variable 'agent_1/target_p_func/fully_connected_2/biases:0' shape=(4,) dtype=float32_ref>
