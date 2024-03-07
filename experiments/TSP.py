@@ -407,4 +407,4 @@ def test(num_uav, model_path):
 if __name__ == '__main__':
     num_uav = 5
     # train(num_uav=num_uav)
-    test(num_uav=num_uav, model_path='/home/dzp1997/PycharmProjects/maddpg-czy-DZP/experiments/2019/06-29/uav5')
+    test(num_uav=num_uav, model_path='/home/dzp1997/PycharmProjects/maddpg1-czy-DZP/experiments/2019/06-29/uav5')

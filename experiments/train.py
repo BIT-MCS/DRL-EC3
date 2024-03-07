@@ -4,11 +4,11 @@ import os
 import tensorflow as tf
 import time
 
-import maddpg.common.tf_util as U
-from experiments.env0 import log0 as Log
-from experiments.env0.data_collection0 import Env
-from maddpg.common.summary import Summary
-from maddpg.trainer.maddpg import MADDPGAgentTrainer
+import maddpg1.common.tf_util as U
+from env0 import log0 as Log
+from env0.data_collection0 import Env
+from maddpg1.common.summary import Summary
+from maddpg1.trainer.maddpg import MADDPGAgentTrainer
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -40,9 +40,9 @@ ARGUMENTS = [
 
     # TODO: Experiments
     # Ape-X
-    ["--num_actor_workers", int, 0,
+    ["--num_actor_workers", int, 3,
      "number of environments one agent can deal with. if >1, use apex ; else, use simple maddpg"],
-    ["--debug_dir", str, "/debug_list/",
+    ["--debug_dir", str, r"\debug_list\\",
      "save index,reward(n-step),priority, value,wi per every sample from experience"],
 
     # RNN
@@ -52,16 +52,16 @@ ARGUMENTS = [
 
     # Checkpointing 保存model
     ["--exp-name", str, None, "name of the experiment"],
-    ["--save-dir", str, "/policy/", "directory in which training state and model should be saved"],
+    ["--save-dir", str, r"\policy\\", "directory in which training state and model should be saved"],
     ["--save-rate", int, 2, "save model once every time this many episodes are completed"],
     ["--model_to_keep", int, 100, "the number of saved models"],
-    ["--load-dir", str, "/home/linc/Desktop/maddpg-final/saved_state.ckpt",
+    ["--load-dir", str, r"D:\code\DRL-EC3-main\experiments\2024\03-05\20-13-24\policy",
      "directory in which training state and model are loaed"],
 
     # Evaluation
     ["--benchmark-iters", int, 100000, "number of iterations run for benchmarking"],
-    ["--benchmark-dir", str, "./benchm", "directory where benchmark data is saved"],
-    ["--plots-dir", str, "./learning_curves/", "directory where plot data is saved"],
+    ["--benchmark-dir", str, r".\benchm", "directory where benchmark data is saved"],
+    ["--plots-dir", str, r".\learning_curve", "directory where plot data is saved"],
 
     # Training
     ["--random_seed", int, 0, "random seed"]
@@ -70,7 +70,7 @@ ARGUMENTS = [
 ACTIONS = [
     ["--restore", "store_true", False],
     ["--display", "store_true", False],
-    ["--benchmark", "store_true", False]
+    ["--benchmark", "store_true", True]
 
 ]
 
@@ -206,8 +206,8 @@ def train(arglist, log):
                     # TODO:加入状态指示器放在step里面进行每一步的更新
                     new_obs_n, rew_n, done_n, info_n, indicator = env.step(actions=action_n, indicator=indicator)
                     # TODO：step-debug
-                    log.step_information(action_n, env, episode_step[0], iteration, meaningful_fill, meaningful_get,
-                                         indicator)
+                    # log.step_information(action_n, env, episode_step[0], iteration, meaningful_fill, meaningful_get,
+                    #                      indicator)
                     rew_n_master = rew_n
                     indicator = [0] * envs[0].n
                 else:
@@ -239,7 +239,7 @@ def train(arglist, log):
                         print('\treminding energy:', env.energy)
                         efficiency = env.efficiency
                         # log.draw_path(env, iteration)
-                        log.draw_path(env, iteration, meaningful_fill, meaningful_get)
+                        log.draw_path(env, iteration)
                         iteration += 1
 
                     meaningful_fill = [0] * envs[0].n
